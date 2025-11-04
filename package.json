@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mongoose": "^8.16.0",
-    "typescript": "^5.7.2"
+    "mongoose": "^8.19.2",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@open-rlb/date-tz": "^1.0.2"
+    "@open-rlb/date-tz": "^1.0.10"
   }
 }
