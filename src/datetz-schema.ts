@@ -10,7 +10,7 @@ export class DateTzSchema extends SchemaType {
 
   cast(data: any): IDateTz {
     if (data instanceof DateTz) {
-      return data;
+      return { timestamp: data.timestamp, timezone: data.timezone };
     }
     if (data && typeof data === 'object' && typeof data.timestamp === 'number' && typeof data.timezone === 'string') {
       return new DateTz(data.timestamp, data.timezone);
@@ -22,4 +22,4 @@ export class DateTzSchema extends SchemaType {
   }
 }
 
-mongoose.Schema.Types['DateTzSchema'] = DateTzSchema;
+mongoose.Schema.Types.DateTzSchema = DateTzSchema;
