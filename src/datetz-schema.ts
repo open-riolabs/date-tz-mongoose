@@ -1,5 +1,4 @@
-import { DateTz } from "@open-rlb/date-tz";
-import { IDateTz } from "@open-rlb/date-tz/idate-tz";
+import { DateTz, IDateTz } from "@open-rlb/date-tz";
 import mongoose, { SchemaType } from "mongoose";
 
 
